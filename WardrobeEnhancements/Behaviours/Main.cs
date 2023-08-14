@@ -170,7 +170,7 @@ namespace WardrobeEnhancements.Behaviours
                 {
                     List<CosmeticsController.CosmeticItem> standItems = new();
                     cosmeticsController.cosmeticStands.Where(a => a.gameObject.activeSelf).ToList().ForEach(a => standItems.Add(a.thisCosmeticItem));
-                    _storedArray[i] = standItems;
+                    _storedArray[i] = standItems.Where(a => !cosmeticsController.unlockedCosmetics.Contains(a)).ToList();
                     continue;
                 }
                 if (i == 1)
