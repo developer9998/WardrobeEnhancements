@@ -5,6 +5,7 @@ using System.Reflection;
 
 namespace WardrobeEnhancements
 {
+    [BepInDependency("dev.auros.bepinex.bepinject"), BepInIncompatibility("org.legoandmars.gorillatag.gorillacosmetics")]
     [BepInPlugin("dev.wardrobeenhancements", "WardrobeEnhancements", "1.0.0")]
     public class Plugin : BaseUnityPlugin
     {
