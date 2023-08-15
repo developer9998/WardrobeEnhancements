@@ -6,6 +6,8 @@ namespace WardrobeEnhancements.Pages
     public class Sets : WardrobePage
     {
         public override string DisplayName => "SETS";
+        public override bool OverrideItems => false;
+
         public override PageType Type => PageType.Category;
         public override CosmeticsController.CosmeticCategory ItemCategory => CosmeticsController.CosmeticCategory.Set;
     }

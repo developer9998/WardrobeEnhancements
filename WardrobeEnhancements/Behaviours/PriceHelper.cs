@@ -10,8 +10,8 @@ namespace WardrobeEnhancements.Behaviours
 {
     public class PriceHelper : IInitializable
     {
-        public Dictionary<string, int> Prices = new Dictionary<string, int>();
-        private Dictionary<CosmeticsController.CosmeticItem, int> SetIndex = new Dictionary<CosmeticsController.CosmeticItem, int>();
+        public Dictionary<string, int> Prices = new();
+        private readonly Dictionary<CosmeticsController.CosmeticItem, int> SetIndex = new();
 
         public void Initialize()
         {
